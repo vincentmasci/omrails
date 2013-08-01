@@ -9,7 +9,7 @@
     </a>
 
     <!-- Be sure to leave the brand out there if you want it shown -->
-    <a class="brand" href="#">One Month Rails</a>
+    <%= link_to "One Month Rails", root_path, class: "brand" %>
 
     <!-- Place everything within .navbar-collapse to hide it until above 768px -->
     <div class="nav-collapse collapse">
@@ -17,10 +17,17 @@
     <li><%= link_to "Home", root_path %></li>
 	<li><%= link_to "About Us", about_path %></li>
 	</ul>
+
   	<ul class= "nav pull-right">
-    <li><%= link_to "Log-in", root_path %></li>
-	</ul>
-    </div><!-- /.nav-collapse -->
+        <% if user_signed_in? %>
+        <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+    <li><%= link_to "Login", new_user_session_path %></li>
+    <% end %>
+	  </ul>
+
+  </div><!-- /.nav-collapse -->
   </div><!-- /.container -->
 </div><!-- /.navbar -->
 </div>
