@@ -6,7 +6,9 @@ gem 'devise'
 gem 'simple_form'
 gem "paperclip", "~> 3.0"
 gem 'aws-sdk'
-gem 'faker'
+gem 'faker', '1.1.2'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 group :production do
 	gem 'pg'
