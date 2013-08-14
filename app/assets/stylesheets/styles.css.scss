@@ -13,7 +13,7 @@ body {
 .box {
     margin: 5px;
     padding: 5px;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.4em;
     float: left;
     -webkit-border-radius: 5px;
@@ -21,6 +21,8 @@ body {
     border-radius: 5px;
     width: 214px;
     box-shadow: 1px 1px 10px #444;
+    box-shadow: 1px 1px 10px #444;
+    width: 214px;
 }
 
 .box img {
@@ -31,5 +33,5 @@ body {
 }
 
 .description {
-    margin: 5px 0 5px;
+    margin: 10px 0 5px;
 }

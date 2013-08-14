@@ -3,6 +3,7 @@
     <p class="description">
         <%= pin.description %>
     </p>
+
         <strong>
             Posted by <%= pin.user.name %>
         </strong>
@@ -10,6 +11,5 @@
         <br>
           <%= link_to 'Edit', edit_pin_path(pin) %> | 
           <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Delete this pin?' } %>
-        
     <% end %>
 </div>
